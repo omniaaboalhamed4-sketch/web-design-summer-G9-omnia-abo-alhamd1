@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<form autocomplete="off">
+
+<fieldset>
+
+<legend>Employee Details</legend>
+
+<!-- First Name -->
+<label>First Name:</label>
+<input type="text"name="fname"required pattern="[A-Za-z]+">
+<br><br>
+
+<!-- Last Name -->
+<label>Last Name:</label>
+<input type="text"name="lname"required minlength="5">
+<br><br>
+
+<!-- Gender -->
+<input type="radio" name="gender" value="Male" required checked> Male
+<input type="radio" name="gender" value="Female"> Female
+<br><br>
+
+<!-- Employee ID -->
+<label>Employee ID:</label>
+<input type="text" name="empid">
+<br><br>
+
+<!-- Designation -->
+<label>Designation:</label>
+<input type="text" name="designation">
+<br><br>
+
+<!-- Mobile -->
+<label>Phone Number:</label>
+<input type="tel"name="mobile"required pattern="01[0125][0-9]{8}"maxlength="11">
+<br><br>
+
+<!-- Courses -->
+<label>Course:</label>
+<input list="courses" name="course">
+
+<datalist id="courses">
+<option value="HTML">
+<option value="CSS">
+<option value="JavaScript">
+<option value="PHP">
+<option value="Java">
+<option value="Python">
+</datalist>
+
+<br><br>
+
+<!-- Upload Image -->
+<label>Upload Image:</label>
+<input type="file"
+name="image"
+accept=".png,image/png">
+<br><br>
+
+<!-- Comment -->
+<label>Comment:</label><br>
+<textarea
+name="comment"
+rows="4"
+cols="30"
+required></textarea>
+
+<br><br>
+
+<!-- Date -->
+<label>Date of Birth:</label>
+<input type="date"
+name="dob"
+required>
+
+<br><br>
+
+<!-- Tracks -->
+<label>Tracks:</label><br>
+
+<input type="checkbox"
+name="track"
+checked>
+Front-End
+
+<input type="checkbox"
+name="track">
+Back-End
+
+<input type="checkbox"
+name="track">
+UI
+
+<br><br>
+
+<!-- Range -->
+<label>Experience:</label>
+<input type="range"
+name="range"
+min="10"
+max="100">
+
+<br><br>
+
+<input type="submit" value="Submit">
+
+</fieldset>
+
+</form>
+
+</body>
+</html>
