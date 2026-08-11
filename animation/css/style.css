@@ -1,0 +1,51 @@
+/* reset style */
+:root{
+    --bg-light: rgb(236, 236, 236);
+    --font-size-large: 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* global style */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.bg-light{
+    background-color: var(--bg-light);
+}
+
+/* animation */
+.animation-card{
+    width: 100px;
+    height: 60px;
+
+    font-size: 50px;
+
+    margin-top: 4%;
+
+    animation: moveCar 6s linear infinite alternate;
+}
+
+/* stop animation when mouse is over the car */
+.animation-card:hover{
+    animation-play-state: paused;
+}
+
+/* animation movement */
+@keyframes moveCar {
+
+    0%{
+        transform: translateX(0px);
+    }
+
+    100%{
+        transform: translateX(500px);
+    }
+
+}

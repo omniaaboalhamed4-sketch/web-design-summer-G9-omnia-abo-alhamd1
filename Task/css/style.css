@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: white;
+}
+
+
+/* ================= NAVBAR ================= */
+
+nav {
+    width: 80%;
+    margin: auto;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+nav button {
+    background: #f5c400;
+    border: none;
+    padding: 14px 25px;
+    cursor: pointer;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    width: 80%;
+    height: 430px;
+    margin: auto;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero img {
+    width: 70%;
+    height: 100%;
+
+    object-fit: cover;
+    margin-left: auto;
+}
+
+.hero-text {
+    position: absolute;
+    left: 0;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    line-height: 1.15;
+    font-weight: normal;
+
+    background: white;
+    padding: 20px;
+}
+
+.search {
+    display: flex;
+    margin-top: 20px;
+}
+
+.search input {
+    width: 250px;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.search button {
+    background: #f5c400;
+    border: none;
+    padding: 15px 30px;
+}
+
+.location {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    background: #f5c400;
+    padding: 18px 30px;
+}
+
+
+/* ================= STATISTICS ================= */
+
+.statistics {
+    width: 80%;
+    margin: 80px auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat-text {
+    width: 48%;
+}
+
+.stat-text h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.stat-text p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.numbers {
+    width: 40%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.number {
+    background: #f7f7f7;
+    height: 130px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.number h2 {
+    color: #f5c400;
+    font-size: 28px;
+}
+
+.number p {
+    color: #777;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+/* ================= APARTMENTS ================= */
+
+.apartments {
+    background: #f7f7f7;
+    padding: 70px 0;
+}
+
+.section-title {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 28px;
+}
+
+
+/* 3 columns */
+
+.apartment-cards {
+    width: 80%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+
+    object-fit: cover;
+    display: block;
+}
+
+.card-info {
+    padding: 18px;
+}
+
+.card-info p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.card-info div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-info span {
+    color: #f0bd00;
+    font-weight: bold;
+}
+
+.card-info small {
+    color: #555;
+}
+
+
+/* ================= BOTTOM SEARCH ================= */
+
+.bottom-search {
+    width: 80%;
+    margin: 40px auto 0;
+
+    display: flex;
+}
+
+.bottom-search input {
+    width: 250px;
+    padding: 16px;
+    border: 1px solid #ddd;
+}
+
+.bottom-search button {
+    padding: 16px 25px;
+    border: none;
+    background: #f5c400;
+}
+
+.bottom-search .view {
+    background: white;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    width: 80%;
+    margin: 80px auto;
+}
+
+
+
+.about-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 80px;
+}
+
+.about-box img {
+    width: 48%;
+    height: 250px;
+
+    object-fit: cover;
+}
+
+.about-text {
+    width: 45%;
+}
+
+.about-text h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+
+.about-box.reverse {
+    flex-direction: row;
+}
+
+.dark-button {
+    margin-top: 20px;
+
+    background: #203b40;
+    color: white;
+
+    border: none;
+    padding: 15px 30px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #203b40;
+    color: white;
+    padding: 60px 0;
+}
+
+.footer-top {
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 50px;
+}
+
+.footer-top h2 {
+    font-size: 25px;
+}
+
+.subscribe {
+    display: flex;
+}
+
+.subscribe input {
+    width: 300px;
+    padding: 15px;
+    border: none;
+}
+
+.subscribe button {
+    width: 55px;
+    border: none;
+    background: #f5c400;
+}
+
+
+.footer-bottom {
+    width: 80%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    gap: 30px;
+
+    border-top: 1px solid #466066;
+    padding-top: 40px;
+}
+
+.footer-bottom h3,
+.footer-bottom h4 {
+    margin-bottom: 20px;
+}
+
+.footer-bottom p {
+    color: #b8c2c4;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
